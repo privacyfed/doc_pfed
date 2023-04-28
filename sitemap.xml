@@ -1,33 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co</loc>
-  <lastmod>2023-04-28T09:16:43+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/algolia-docsearch</loc>
-  <lastmod>2023-04-28T09:16:43+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/algolia-docsearch</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/getting-started</loc>
-  <lastmod>2023-04-28T09:16:43+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/getting-started</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/navigation</loc>
-  <lastmod>2023-04-28T09:16:43+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/navigation</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/customizing-your-site</loc>
-  <lastmod>2023-04-28T09:16:43+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/customizing-your-site</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/custom-404-page</loc>
-  <lastmod>2023-04-28T09:16:43+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/modal/modal-service-add</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/wizard-service-add</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/insert-data</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/view/insert-data</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/view/choose-category-company</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/view/choose-service</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/view/choose-company</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/choose-category-company</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/choose-service</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/choose-company</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
+  <changefreq>daily</changefreq>
+ </url>
+ <url>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/custom-404-page</loc>
+  <lastmod>2023-04-28T12:15:03+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
