@@ -26,4 +26,7 @@ Si potrà scegliere il tipo di dato che si vuole inserire.
 L'elenco dei tipi di dato varierà in base alla categoria scelta.  
 
 #### Secondo Passo {#second-step}
-Dopo aver scelto 
+Dopo aver scelto il tipo di dato, bisognerà inserire il loro valore.
+
+#### Terzo Passo {@third-step}
+In quest'ultimo passo, si potrà inserire un eventuale nota o descrizione.
