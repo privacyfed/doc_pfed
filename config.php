@@ -1,11 +1,13 @@
 <?php
 
+declare(strict_types=1);
+
 use Illuminate\Support\Str;
 
 return [
-    'baseUrl' => '',
+    'baseUrl' => 'https://privacyfed.github.io/doc_pfed/',
     'production' => false,
-    'siteName' => 'Docs Starter Template',
+    'siteName' => 'Modulo PFed',
     'siteDescription' => 'Beautiful docs powered by Jigsaw',
 
     // Algolia DocSearch credentials
@@ -27,6 +29,6 @@ return [
         }
     },
     'url' => function ($page, $path) {
-        return Str::startsWith($path, 'http') ? $path : '/' . trimPath($path);
+        return Str::startsWith($path, 'http') ? $path : url('/'.trimPath($path));
     },
 ];
