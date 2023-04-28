@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Documentazione di Service/Steps/InsertData.php">
+    <meta name="description" content="Documentazione della blade Profile Show">
 
     <meta property="og:site_name" content="Modulo PFed" />
-    <meta property="og:title" content="Service/Steps/InsertData.php | Modulo PFed" />
-    <meta property="og:description" content="Documentazione di Service/Steps/InsertData.php" />
-    <meta property="og:url" content="https://privacyfed.github.io/doc_pfed/docs/livewire/wizard/service-add-steps/view/insert-data" />
+    <meta property="og:title" content="Profile Show | Modulo PFed" />
+    <meta property="og:description" content="Documentazione della blade Profile Show" />
+    <meta property="og:url" content="https://privacyfed.github.io/doc_pfed/docs/livewire/view/profile-show" />
     <meta property="og:image" content="/assets/img/logo.png" />
     <meta property="og:type" content="website" />
 
@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     
-    <title>Modulo PFed | Service/Steps/InsertData.php</title>
+    <title>Modulo PFed | Profile Show</title>
 
     <link rel="home" href="https://privacyfed.github.io/doc_pfed/">
     <link rel="icon" href="https://privacyfed.github.io/doc_pfed/favicon.ico">
@@ -133,23 +133,19 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1 id="insert-data">Documentazione di Service/Steps/InsertData.php</h1>
+            <h1 id="profile-show">Profile Show</h1>
 
-<h2>Documentazione del codice</h2>
+<p>Questo codice Blade parte da un'azione del Panel ed estende il layout adm_theme::layouts.app e definisce la sezione content.</p>
 
-<p>Il codice fornito rappresenta una sezione di una vista di un wizard per la selezione dei campi extra di un servizio.</p>
+<p>All'interno di questa sezione, il codice utilizza il componente Livewire extra-field-groups.by.category, passando come parametro il modello $profile->getProfile().</p>
 
-<h2>Struttura del codice</h2>
+<p>Successivamente, viene creato un ciclo foreach che itera attraverso i risultati del metodo $profile->getSubscriptionUps().</p>
 
-<p>La vista estende il layout 'ui::layouts.wizard' e visualizza i campi extra associati al servizio selezionato.</p>
+<p>All'interno di questo ciclo, viene utilizzato il componente Blade x-card per creare una scheda di abbonamento per ciascuna sottoscrizione.</p>
 
-<p>La vista contiene un ciclo foreach che itera sugli array di gruppi di campi extra associati al servizio corrente. Per ogni gruppo di campi extra viene visualizzato un titolo con il nome del gruppo, ottenuto dalla chiave 'name' dell'array del gruppo.</p>
+<p>Viene utilizzato il componente x-slot per definire il titolo, il sottotitolo, la valuta, l'importo e il pulsante di pagamento per ogni scheda di abbonamento.</p>
 
-<p>All'interno del ciclo foreach principale, viene creato un altro ciclo foreach che itera sui campi extra del gruppo corrente. Per ogni campo extra viene generato un componente di input, definito come un componente Laravel Blade x-input.field. Il componente accetta il parametro :field, che è ottenuto tramite il metodo toData() del componente.</p>
-
-<h2>Utilizzo di framework</h2>
-
-<p>La vista fa uso del framework Laravel, in particolare del sistema di templating Blade e dei componenti x-input.field e x-input.group per la generazione degli input. Inoltre, fa uso del layout 'ui::layouts.wizard' per definire la struttura della pagina del wizard.</p>
+<p>Si noti che il file Blade utilizza anche i file di lingua per recuperare i valori delle chiavi di traduzione, come ad esempio  'extrafield::extra_fields.plan.light.title'</p>
         </div>
     </div>
 </section>
