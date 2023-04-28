@@ -16,7 +16,11 @@ Selezionando una categoria si potrà visualizzare
 2. un apposito tasto dove poter aggiungere un proprio dato
 
 
-## Aggiungere Dato {#add-data}
+### Aggiungere Dato {#add-data}
 
 Tramite il tasto col segno +, si potrà aggiungere il proprio dato.  
-Si visualizzerà un modal dove poter 
+Si visualizzerà un modal dove poter seguire i diversi passi per aggiungere un proprio dato. 
+
+#### Primo Passo {#first-step}
+
+Si potrà scegliere 
