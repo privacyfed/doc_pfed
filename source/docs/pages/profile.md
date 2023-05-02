@@ -21,12 +21,15 @@ Selezionando una categoria si potrà visualizzare
 Tramite il tasto col segno +, si potrà aggiungere il proprio dato.  
 Si visualizzerà un modal dove poter seguire i diversi passi per aggiungere un proprio dato. 
 
-#### Primo Passo  {#first-step}
+##### Primo Passo  {#first-step}
 Si potrà scegliere il tipo di dato che si vuole inserire.  
 L'elenco dei tipi di dato varierà in base alla categoria scelta.  
 
-#### Secondo Passo {#second-step}
+##### Secondo Passo {#second-step}
 Dopo aver scelto il tipo di dato, bisognerà inserire il loro valore.
 
-#### Terzo Passo {@third-step}
+##### Terzo Passo {@third-step}
 In quest'ultimo passo, si potrà inserire un eventuale nota o descrizione.
+
+
+### Modificare Dato {#change-data}
