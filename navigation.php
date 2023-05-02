@@ -13,6 +13,7 @@ return [
     //     ],
     // ],
     // 'Jigsaw Docs' => 'https://jigsaw.tighten.co/docs/installation',
+
     'Pagine' => [
         'children' => [
             'Tipo di Registrazione' => 'docs/pages/type-of-sign-in',
