@@ -16,7 +16,7 @@ return [
 
     'Pagine' => [
         'children' => [
-            'Tipo di Registrazione' => 'docs/pages/type-of-sign-in',
+            // 'Tipo di Registrazione' => 'docs/pages/type-of-sign-in',
             'Profilo' => 'docs/pages/profile',
         ],
     ],
