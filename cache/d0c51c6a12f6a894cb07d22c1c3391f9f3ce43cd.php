@@ -21,10 +21,12 @@
         <meta name="generator" content="tighten_jigsaw_doc">
     <?php endif; ?>
 
+    <base href="<?php echo e($page->getUrl()); ?>" />
+
     <title><?php echo e($page->siteName); ?><?php echo e($page->title ? ' | ' . $page->title : ''); ?></title>
 
     <link rel="home" href="<?php echo e($page->baseUrl); ?>">
-    <link rel="icon" href="<?php echo e(url('/favicon.ico')); ?>">
+    <link rel="icon" href="/module_xot/favicon.ico">
 
     <?php echo $__env->yieldPushContent('meta'); ?>
 
@@ -34,7 +36,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i"
         rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo e(url(mix('css/main.css', 'assets/build'))); ?>">
+    <link rel="stylesheet" href="/module_xot<?php echo e(mix('css/main.css', 'assets/build')); ?>">
 
     <?php if($page->docsearchApiKey && $page->docsearchIndexName): ?>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
@@ -46,8 +48,7 @@
         <div class="container flex items-center max-w-8xl mx-auto px-4 lg:px-8">
             <div class="flex items-center">
                 <a href="/" title="<?php echo e($page->siteName); ?> home" class="inline-flex items-center">
-                    <img class="h-8 md:h-10 mr-3" src="<?php echo e(url('/assets/img/logo.svg')); ?>"
-                        alt="<?php echo e($page->siteName); ?> logo" />
+                    <img class="h-8 md:h-10 mr-3" src="/assets/img/logo.svg" alt="<?php echo e($page->siteName); ?> logo" />
 
                     <h1 class="text-lg md:text-2xl text-blue-900 font-semibold hover:text-blue-600 my-0 pr-4">
                         <?php echo e($page->siteName); ?></h1>
@@ -68,7 +69,7 @@
         <?php echo $__env->yieldContent('body'); ?>
     </main>
 
-    <script src="<?php echo e(url(mix('js/main.js', 'assets/build'))); ?>"></script>
+    <script src="/module_xot<?php echo e(mix('js/main.js', 'assets/build')); ?>"></script>
 
     <?php echo $__env->yieldPushContent('scripts'); ?>
 
