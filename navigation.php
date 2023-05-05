@@ -20,4 +20,12 @@ return [
             'Profilo' => 'docs/pages/profile',
         ],
     ],
+    'Base' => [
+        'url' => 'docs/base',
+        'children' => [
+            'Installazione' => 'docs/base/installation',
+            'Errori Comuni' => 'docs/base/issues',
+            'Struttura' => 'docs/base/structure',
+        ],
+    ],
 ];
