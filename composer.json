@@ -1,4 +1,9 @@
 {
+    "name": "privacyfed/doc_pfed",
+    "description": "Modulo PFed",
+    "homepage": "http://privacyfed.github.io/module_pfed",
+    "authors": [],
+    "license": "MIT",
     "require": {
         "tightenco/jigsaw": "^1.6",
         "samdark/sitemap": "^2.2.1"
