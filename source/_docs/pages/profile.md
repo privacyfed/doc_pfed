@@ -26,11 +26,11 @@ Si potrà scegliere il tipo di dato che si vuole inserire.
 L'elenco dei tipi di dato varierà in base alla categoria scelta.  
 TEST !
 
-##### Secondo Passo {#second-step}
+##### Secondo Passo 
 Dopo aver scelto il tipo di dato, bisognerà inserire il loro valore.
 
-##### Terzo Passo {@third-step}
+##### Terzo Passo 
 In quest'ultimo passo, si potrà inserire un eventuale nota o descrizione.
 
 
-### Modificare Dato {#change-data}
+### Modificare Dato 
