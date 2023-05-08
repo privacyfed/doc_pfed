@@ -10,7 +10,7 @@ return [
         ],
     ],
     'Base' => [
-        'url' => 'docs/base',
+        // 'url' => 'docs/base',
         'children' => [
             'Installazione' => 'docs/base/installation',
             'Errori Comuni' => 'docs/base/issues',
