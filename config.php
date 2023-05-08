@@ -4,28 +4,11 @@ declare(strict_types=1);
 
 use Illuminate\Support\Str;
 
-$moduleName = 'PFed';
-$url = 'https://privacyfed.github.io/doc_pfed/';
-
 return [
-    'baseUrl' => $url,
+    'baseUrl' => 'https://privacyfed.github.io/doc_pfed/',
     'production' => false,
-    'siteName' => 'Modulo '.$moduleName,
-    'siteDescription' => 'Modulo '.$moduleName,
-    'lang' => 'it',
-
-    'collections' => [
-        'posts' => [
-            'path' => function ($page) {
-                return $page->lang.'/posts/'.Str::slug($page->getFilename());
-            },
-        ],
-        'docs' => [
-            'path' => function ($page) {
-                return $page->lang.'/docs/'.Str::slug($page->getFilename());
-            },
-        ],
-    ],
+    'siteName' => 'Modulo PFed',
+    'siteDescription' => 'Beautiful docs powered by Jigsaw',
 
     // Algolia DocSearch credentials
     'docsearchApiKey' => env('DOCSEARCH_KEY'),
@@ -46,11 +29,6 @@ return [
         }
     },
     'url' => function ($page, $path) {
-        if (Str::startsWith($path, 'http')) {
-            return $path;
-        }
-        // return Str::startsWith($path, 'http') ? $path : '/' . trimPath($path);
-        // return url('/'.$page->lang.'/'.trimPath($path));
-        return url('/'.trimPath($path));
+        return Str::startsWith($path, 'http') ? $path : url('/'.trimPath($path));
     },
 ];
