@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'baseUrl' => 'https://jigsaw-docs-template.tighten.co',
+    'baseUrl' => 'https://privacyfed.github.io/doc_pfed',
     'production' => true,
 
     // DocSearch credentials
