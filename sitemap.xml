@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co</loc>
-  <lastmod>2023-05-08T18:22:58+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed</loc>
+  <lastmod>2023-05-08T18:27:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/algolia-docsearch</loc>
-  <lastmod>2023-05-08T18:22:58+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/algolia-docsearch</loc>
+  <lastmod>2023-05-08T18:27:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/getting-started</loc>
-  <lastmod>2023-05-08T18:22:58+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/getting-started</loc>
+  <lastmod>2023-05-08T18:27:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/navigation</loc>
-  <lastmod>2023-05-08T18:22:58+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/navigation</loc>
+  <lastmod>2023-05-08T18:27:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/customizing-your-site</loc>
-  <lastmod>2023-05-08T18:22:58+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/customizing-your-site</loc>
+  <lastmod>2023-05-08T18:27:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/custom-404-page</loc>
-  <lastmod>2023-05-08T18:22:58+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/custom-404-page</loc>
+  <lastmod>2023-05-08T18:27:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
  <url>
-  <loc>https://jigsaw-docs-template.tighten.co/docs/ciccio</loc>
-  <lastmod>2023-05-08T18:22:58+00:00</lastmod>
+  <loc>https://privacyfed.github.io/doc_pfed/docs/ciccio</loc>
+  <lastmod>2023-05-08T18:27:57+00:00</lastmod>
   <changefreq>daily</changefreq>
  </url>
 </urlset>
