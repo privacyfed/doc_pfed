@@ -1,20 +1,14 @@
 <?php
 
-declare(strict_types=1);
-
 return [
-    'Pagine' => [
+    'Getting Started' => [
+        'url' => 'docs/getting-started',
         'children' => [
-            // 'Tipo di Registrazione' => 'docs/pages/type-of-sign-in',
-            'Profilo' => 'docs/pages/profile',
+            'Customizing Your Site' => 'docs/customizing-your-site',
+            'Navigation' => 'docs/navigation',
+            'Algolia DocSearch' => 'docs/algolia-docsearch',
+            'Custom 404 Page' => 'docs/custom-404-page',
         ],
     ],
-    'Base' => [
-        // 'url' => 'docs/base',
-        'children' => [
-            'Installazione' => 'docs/base/installation',
-            'Errori Comuni' => 'docs/base/issues',
-            'Struttura' => 'docs/base/structure',
-        ],
-    ],
+    'Jigsaw Docs' => 'https://jigsaw.tighten.co/docs/installation',
 ];
