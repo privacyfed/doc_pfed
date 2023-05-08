@@ -3,7 +3,7 @@
         'name' => 'privacyfed/doc_pfed',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '3c6027d8dee7668c43712b080bb342eb175b9e38',
+        'reference' => 'ab74c935ecd11718232ab6e0db58c3670d059c1c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -283,7 +283,7 @@
         'privacyfed/doc_pfed' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '3c6027d8dee7668c43712b080bb342eb175b9e38',
+            'reference' => 'ab74c935ecd11718232ab6e0db58c3670d059c1c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
