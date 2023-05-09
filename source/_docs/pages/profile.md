@@ -34,3 +34,7 @@ In quest'ultimo passo, si potrà inserire un eventuale nota o descrizione.
 
 
 ### Modificare Dato 
+E' possibile modificare un dato inserito in precedenza, tramite l'apposito tasto "Modifica"  
+
+### Eliminare Dato
+E' possibile eliminare un dato inserito.  
