@@ -6,8 +6,8 @@ return [
     'Pagine' => [
         'children' => [
             // 'Tipo di Registrazione' => 'docs/pages/type-of-sign-in',
-            'Profilo' => 'docs/pages/profile',
-            'I Miei Servizi' => 'docs/pages/services',
+            'Profilo' => 'docs/profile',
+            'I Miei Servizi' => 'docs/services',
         ],
     ],
     'Base' => [
