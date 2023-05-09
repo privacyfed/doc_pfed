@@ -5,7 +5,7 @@ extends: _layouts.documentation
 section: content
 ---
 
-## La pagina I Miei Servizi {#services-page}
+## La pagina I Miei Servizi {#services}
 
 In questa pagina è possibile iscriversi e visualizzare i servizi delle varie aziende accettando i relativi consensi.  
 
