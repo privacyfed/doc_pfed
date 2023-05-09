@@ -6,7 +6,11 @@
     "license": "MIT",
     "require": {
         "tightenco/jigsaw": "^1.6",
+        "tightenco/jigsaw-docs-template": "^1.1",
         "samdark/sitemap": "^2.2.1"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.7"
     },
     "autoload": {
         "psr-4": {

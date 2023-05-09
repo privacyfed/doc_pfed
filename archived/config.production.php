@@ -1,7 +1,9 @@
 <?php
 
+declare(strict_types=1);
+
 return [
-    'baseUrl' => 'https://privacyfed.github.io/doc_pfed',
+    'baseUrl' => 'https://privacyfed.github.io/doc_pfed/',
     'production' => true,
 
     // DocSearch credentials

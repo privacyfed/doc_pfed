@@ -13,9 +13,11 @@ return [
     'Base' => [
         // 'url' => 'docs/base',
         'children' => [
-            'Installazione' => 'docs/base/installation',
-            'Errori Comuni' => 'docs/base/issues',
-            'Struttura' => 'docs/base/structure',
+            'Customizing Your Site' => 'docs/customizing-your-site',
+            'Navigation' => 'docs/navigation',
+            'Algolia DocSearch' => 'docs/algolia-docsearch',
+            'Custom 404 Page' => 'docs/custom-404-page',
         ],
     ],
+    'Jigsaw Docs' => 'https://jigsaw.tighten.co/docs/installation',
 ];
