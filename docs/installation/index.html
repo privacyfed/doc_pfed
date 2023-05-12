@@ -72,19 +72,19 @@
             <ul class="my-0">
             <li class="pl-4">
             
-        <p class="nav-menu__item text-gray-600">Pagine</p>
-    
-            
-        <ul class="my-0">
-            <li class="pl-4">
-            
         <a href="https://privacyfed.github.io/doc_pfed/docs/installation"
-            class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
+            class="lvl0  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
         >
             Installazione
         </a>
     
     </li>
+            <li class="pl-4">
+            
+        <p class="nav-menu__item text-gray-600">Pagine</p>
+    
+            
+        <ul class="my-0">
             <li class="pl-4">
             
         <a href="https://privacyfed.github.io/doc_pfed/docs/profile"
@@ -217,7 +217,8 @@ DB_PASSWORD_LU=root
 
 <h3>vedere la lista dei moduli con il comando</h3>
 
-<p>da url tramite il browser:</p>
+<p>Il progetto è strutturato a Moduli, inseriti dentro una base/progetto di laravel, utilizzando il pacchetto nwidart di laravel (https://nwidart.com/laravel-modules/v6/introduction)<br />
+da url tramite il browser:</p>
 
 <pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=module-list
 </code></pre>
