@@ -167,6 +167,9 @@
 <h3>Clonare la base in locale nella cartella del server, scaricando i submodules, e senza la storia delle modifiche</h3>
 
 <pre><code class="language-bash">git clone https://github.com/privacyfed/base_privacyfed.git base_pfed --recurse-submodules --depth=1
+git submodule foreach git stash
+./bashscripts/git_pull.sh
+./bashscripts/git_branch.sh
 </code></pre>
 
 <h3>dalla cartella "laravel" creare il file delle variabili d'ambiente .env</h3>
@@ -176,7 +179,7 @@
 
 <ul>
 <li>creare il database geek_lu (degli utenti, email, password)</li>
-<li>creare il database geek_pfed (database dedicato al progetto, profili e modelli necessari)</li>
+<li>creare il database geek_pfed (database dedicato al progetto, profili e modelli necessari per il progetto)</li>
 <li>inserire i parametri di configurazione dei database:</li>
 </ul>
 
@@ -191,20 +194,30 @@ DB_PASSWORD_LU=root
 
 <h3>dalla cartella laravel, lanciare in bash il comando</h3>
 
+<p>comando per installare i pacchetti utilizzati di default nei vari moduli</p>
+
 <pre><code class="language-bash">../bashscripts/composer_init.sh
-../composer_custom.sh
 </code></pre>
 
-<p>alternativa:</p>
+<p>comando per installare i pacchetti utilizzati specificatamente per il progetto pfed</p>
+
+<pre><code class="language-bash">../composer_custom.sh
+</code></pre>
+
+<p>generare la key necessaria per laravel</p>
 
 <pre><code class="language-bash">php artisan key:generate
-cd Modules/Xot/Services
+</code></pre>
+
+<p>sotto Modules/Xot/Services vengono utilizzati pacchetti utilizzati meno recentemente, ma necessari</p>
+
+<pre><code class="language-bash">cd Modules/Xot/Services
 ./bashscripts/composer_init.sh
 </code></pre>
 
 <h3>vedere la lista dei moduli con il comando</h3>
 
-<p>da url:</p>
+<p>da url tramite il browser:</p>
 
 <pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=module-list
 </code></pre>
@@ -216,7 +229,7 @@ cd Modules/Xot/Services
 
 <h3>abilitare tutti i moduli con il comando</h3>
 
-<p>da url:</p>
+<p>da url tramite il browser:</p>
 
 <pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=module-enable&amp;module=NOME_MODULO
 </code></pre>
@@ -228,7 +241,7 @@ cd Modules/Xot/Services
 
 <h3>fare la migration</h3>
 
-<p>da url:</p>
+<p>da url tramite il browser:</p>
 
 <pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=migrate
 </code></pre>
