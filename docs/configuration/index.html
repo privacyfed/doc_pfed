@@ -4,12 +4,12 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="description" content="I Moduli">
+        <meta name="description" content="Configurazione">
 
         <meta property="og:site_name" content="Modulo PFed"/>
-        <meta property="og:title" content="I Moduli | Modulo PFed"/>
-        <meta property="og:description" content="I Moduli"/>
-        <meta property="og:url" content="https://privacyfed.github.io/doc_pfed/docs/modules"/>
+        <meta property="og:title" content="Configurazione | Modulo PFed"/>
+        <meta property="og:description" content="Configurazione"/>
+        <meta property="og:url" content="https://privacyfed.github.io/doc_pfed/docs/configuration"/>
         <meta property="og:image" content="/assets/img/logo.png"/>
         <meta property="og:type" content="website"/>
 
@@ -17,7 +17,7 @@
         <meta name="twitter:card" content="summary_large_image">
 
         
-        <title>Modulo PFed | I Moduli</title>
+        <title>Modulo PFed | Configurazione</title>
 
         <link rel="home" href="https://privacyfed.github.io/doc_pfed">
         <link rel="icon" href="/favicon.ico">
@@ -83,7 +83,7 @@
             <li class="pl-4">
             
         <a href="https://privacyfed.github.io/doc_pfed/docs/modules"
-            class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
+            class="lvl1   nav-menu__item hover:text-blue-500"
         >
             Moduli
         </a>
@@ -92,7 +92,7 @@
             <li class="pl-4">
             
         <a href="https://privacyfed.github.io/doc_pfed/docs/configuration"
-            class="lvl1   nav-menu__item hover:text-blue-500"
+            class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
         >
             Configurazione
         </a>
@@ -130,48 +130,63 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1 id="modules">I Moduli</h1>
+            <h1>Struttura della configurazione del progetto</h1>
 
-<p>Il progetto è strutturato a Moduli, inseriti dentro una base/progetto di laravel, utilizzando il pacchetto nwidart di laravel (https://nwidart.com/laravel-modules/v6/introduction). 
-Esistono moduli necessari per l'esistenza stessa del progetto, come il modulo Xot, Cms, Tenant.
-Gli altri moduli son stati pensati per implementare determinati funzioni.
-Oltre a questi, esiste il modulo PFed, creato appositamente per il progetto.</p>
+<p>Il progetto è un progetto multi-tenant, ciò significa che si utilizza lo stesso codice del progetto su più domini.<br />
+Ogni dominio dovrà avere il suoi file di configurazione, che si trovano dentro la cartella laravel/config secondo una specifica path, esempio:</p>
 
-<h3>vedere la lista dei moduli con il comando</h3>
+<p>per i file di configurazione di http://pfed.lan2/, il tutto sarà all'interno della cartella laravel/config/lan2/pfed/<br />
+per i file di configurazione di https://app.privacyfed.eu/, il tutto sarà all'interno della cartella laravel/config/eu/privacyfed/app/</p>
 
-<p>da url tramite il browser:</p>
+<p>il criterio da seguire per strutturare i file di configurazione dentro la cartella laravel/config è:
+- prendere il dominio utilizzato
+- sostituire il .(punto) con /(slash), creando una path con directory
+- invertire l'ordine delle directory</p>
 
-<pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=module-list
+<h1 id="xra-file">Il file xra.php</h1>
+
+<p>Il progetto è un progetto multi-tenant, ciò significa che si utilizza lo stesso codice del progetto su più domini.<br />
+Ogni dominio dovrà avere il suo file di configurazione principale, il file xra.php</p>
+
+<p>Ogni file xra.php si dovrà trovare dentro la cartella laravel/config/path_specifica_del_dominio, esempio:</p>
+
+<p>in laravel/config/local/dominio/xra.php</p>
+
+<ul>
+<li><p>copio la cartella laravel/config/localhost in laravel/config/local/dominio/* e imposto i parametri nei file</p></li>
+<li><p>questo significa che il virtual host deve chiamarsi dominio.local</p></li>
+</ul>
+
+<h3>per compilare il tema (da dentro la cartella laravel/Themes/NOME_TEMA)</h3>
+
+<pre><code class="language-bash">npm install
+npm run dev
 </code></pre>
 
-<p>alternativa da terminale:</p>
+<h3>IMPORTANTISSIMO per sincronizzare la base si utilizzano i famosi TRE FILES.</h3>
 
-<pre><code class="language-bash">php artisan module:list 
+<p>Questi file si trovano nella cartella BASE/bashscripts.</p>
+
+<p>Vanno lanciati dalla cartella della root della BASE.</p>
+
+<p>Si utilizzano così:</p>
+
+<pre><code class="language-bash">- ./bashscripts/git_pull.sh &amp;&amp; ./bashscripts/git_branch.sh per fare il pull
+- ./bashscripts/git_pull.sh &amp;&amp; ./bashscripts/git_branch.sh per fare il push
 </code></pre>
 
-<h3>abilitare tutti i moduli con il comando</h3>
+<p>Dopo aver fatto push, siccome su git ci sono delle azioni che possono modificare i file, bisogna rilanciare subito il pull, come scritto sopra</p>
 
-<p>da url tramite il browser:</p>
+<h3>FORMATTAZIONE DEL CODICE</h3>
 
-<pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=module-enable&amp;module=NOME_MODULO
+<p>Per formattare il codice in modo corretto bisogna usare cs-fixer global. Per installarlo seguire le istruzioni nel seguente file:</p>
+
+<pre><code class="language-bash">bashscripts/tips/cs-fixer.txt
 </code></pre>
 
-<p>alternativa da terminale:</p>
+<h3>STRUTTURA, TIPS AND TRICKS E RISOLUZIONE ERRORI COMUNI</h3>
 
-<pre><code class="language-bash">php artisan module:enable NomeModulo
-</code></pre>
-
-<h3>fare la migration</h3>
-
-<p>da url tramite il browser:</p>
-
-<pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=migrate
-</code></pre>
-
-<p>in alternativa da terminale:</p>
-
-<pre><code class="language-bash">php artisan migrate
-</code></pre>
+<p>Per tips &amp; tricks rivolgersi alla seguente <a href="https://laraxot.github.io/module_xot/docs/base/issues/">Documentazione Generica</a></p>
         </div>
     </div>
 </section>
