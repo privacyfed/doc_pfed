@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Modulo PFed">
+    <meta name="description" content="Aggiornamento del progetto">
 
     <meta property="og:site_name" content="Modulo PFed" />
-    <meta property="og:title" content="ciccio | Modulo PFed" />
-    <meta property="og:description" content="Modulo PFed" />
-    <meta property="og:url" content="https://privacyfed.github.io/doc_pfed/docs/ciccio" />
+    <meta property="og:title" content="Aggiornamento del progetto | Modulo PFed" />
+    <meta property="og:description" content="Aggiornamento del progetto" />
+    <meta property="og:url" content="https://privacyfed.github.io/doc_pfed/docs/update-project" />
     <meta property="og:image" content="https://privacyfed.github.io/doc_pfed/assets/img/logo.png" />
     <meta property="og:type" content="website" />
 
@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     
-    <title>Modulo PFed | ciccio</title>
+    <title>Modulo PFed | Aggiornamento del progetto</title>
 
     <link rel="home" href="https://privacyfed.github.io/doc_pfed">
     <link rel="icon" href="/favicon.ico">
@@ -143,9 +143,32 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1 id="custom-404-page">Ciccio</h1>
+            <h1>Aggiornamento del progetto</h1>
 
-<p>aaaaaa</p>
+<h3>IMPORTANTISSIMO per sincronizzare la base si utilizzano i famosi TRE FILES.</h3>
+
+<p>Questi file si trovano nella cartella BASE/bashscripts.</p>
+
+<p>Vanno lanciati dalla cartella della root della BASE.</p>
+
+<p>Si utilizzano così:</p>
+
+<pre><code class="language-bash">- ./bashscripts/git_pull.sh &amp;&amp; ./bashscripts/git_branch.sh per fare il pull
+- ./bashscripts/git_pull.sh &amp;&amp; ./bashscripts/git_branch.sh per fare il push
+</code></pre>
+
+<p>Dopo aver fatto push, siccome su git ci sono delle azioni che possono modificare i file, bisogna rilanciare subito il pull, come scritto sopra</p>
+
+<h3>FORMATTAZIONE DEL CODICE</h3>
+
+<p>Per formattare il codice in modo corretto bisogna usare cs-fixer global. Per installarlo seguire le istruzioni nel seguente file:</p>
+
+<pre><code class="language-bash">bashscripts/tips/cs-fixer.txt
+</code></pre>
+
+<h3>STRUTTURA, TIPS AND TRICKS E RISOLUZIONE ERRORI COMUNI</h3>
+
+<p>Per tips &amp; tricks rivolgersi alla seguente <a href="https://laraxot.github.io/module_xot/docs/base/issues/">Documentazione Generica</a></p>
         </div>
     </div>
 </section>
