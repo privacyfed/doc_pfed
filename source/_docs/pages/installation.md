@@ -11,6 +11,9 @@ section: content
 
 ```bash
 git clone https://github.com/privacyfed/base_privacyfed.git base_pfed --recurse-submodules --depth=1
+git submodule foreach git stash
+./bashscripts/git_pull.sh
+./bashscripts/git_branch.sh
 ```
 
 ### dalla cartella "laravel" creare il file delle variabili d'ambiente .env 
@@ -19,7 +22,7 @@ git clone https://github.com/privacyfed/base_privacyfed.git base_pfed --recurse-
 cp .env.latest .env
 ```
 - creare il database geek_lu (degli utenti, email, password)  
-- creare il database geek_pfed (database dedicato al progetto, profili e modelli necessari)  
+- creare il database geek_pfed (database dedicato al progetto, profili e modelli necessari per il progetto)  
 - inserire i parametri di configurazione dei database:  
 
 ```bash
@@ -34,22 +37,30 @@ DB_PASSWORD_LU=root
 
 ### dalla cartella laravel, lanciare in bash il comando
 
+comando per installare i pacchetti utilizzati di default nei vari moduli
 ```bash
 ../bashscripts/composer_init.sh
+```
+
+comando per installare i pacchetti utilizzati specificatamente per il progetto pfed
+```bash
 ../composer_custom.sh
 ```
 
-alternativa: 
-
+generare la key necessaria per laravel
 ```bash
 php artisan key:generate
+```
+
+sotto Modules/Xot/Services vengono utilizzati pacchetti utilizzati meno recentemente, ma necessari
+```bash
 cd Modules/Xot/Services
 ./bashscripts/composer_init.sh
 ```
 
 ### vedere la lista dei moduli con il comando
 
-da url: 
+da url tramite il browser: 
 
 ```bash
 http://VIRTUAL_HOST.EXT/?_act=artisan&cmd=module-list
@@ -63,7 +74,7 @@ php artisan module:list
 
 ### abilitare tutti i moduli con il comando
 
-da url: 
+da url tramite il browser: 
 
 ```bash
 http://VIRTUAL_HOST.EXT/?_act=artisan&cmd=module-enable&module=NOME_MODULO
@@ -77,7 +88,7 @@ php artisan module:enable NomeModulo
 
 ### fare la migration
 
-da url: 
+da url tramite il browser: 
 
 ```bash
 http://VIRTUAL_HOST.EXT/?_act=artisan&cmd=migrate
