@@ -73,3 +73,10 @@ sotto Modules/Xot/Services vengono utilizzati pacchetti utilizzati meno recentem
 cd Modules/Xot/Services
 ./bashscripts/composer_init.sh
 ```
+
+### eseguire le migrazioni
+
+da dentro la cartella laravel, eseguire il comando:  
+```bash
+php artisan migrate
+```
