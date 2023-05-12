@@ -6,7 +6,7 @@ return [
     'Installazione' => [
         'url' => 'docs/installation',
         'children' => [
-            'Aggiornamento del progetto' => 'docs/update-project',
+            'Aggiornare il progetto' => 'docs/update-project',
             'Moduli' => 'docs/modules',
             'Configurazione' => 'docs/configuration',
         ],
