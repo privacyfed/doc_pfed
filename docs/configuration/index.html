@@ -135,12 +135,14 @@
 <p>Il progetto è un progetto multi-tenant, ciò significa che si utilizza lo stesso codice del progetto su più domini.<br />
 Ogni dominio dovrà avere il suoi file di configurazione, che si trovano dentro la cartella laravel/config secondo una specifica path, esempio:</p>
 
-<p>per i file di configurazione di http://pfed.lan2/, il tutto sarà all'interno della cartella laravel/config/lan2/pfed/<br />
-per i file di configurazione di https://app.privacyfed.eu/, il tutto sarà all'interno della cartella laravel/config/eu/privacyfed/app/</p>
+<p>per i file di configurazione di http://pfed.lan2/, il tutto sarà all'interno della cartella<br />
+laravel/config/lan2/pfed/<br />
+per i file di configurazione di https://app.privacyfed.eu/, il tutto sarà all'interno della cartella<br />
+laravel/config/eu/privacyfed/app/</p>
 
-<p>il criterio da seguire per strutturare i file di configurazione dentro la cartella laravel/config è:
-- prendere il dominio utilizzato
-- sostituire il .(punto) con /(slash), creando una path con directory
+<p>il criterio da seguire per strutturare i file di configurazione dentro la cartella laravel/config è:<br />
+- prendere il dominio utilizzato<br />
+- sostituire il .(punto) con /(slash), creando una path con directory<br />
 - invertire l'ordine delle directory</p>
 
 <h1 id="xra-file">Il file xra.php</h1>
