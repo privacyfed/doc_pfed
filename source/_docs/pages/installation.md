@@ -18,23 +18,33 @@ git clone https://github.com/privacyfed/base_privacyfed.git base_pfed --recurse-
 ```bash
 cp .env.latest .env
 ```
+- creare il database geek_lu (degli utenti, email, password)  
+- creare il database geek_pfed (database dedicato al progetto, profili e modelli necessari)  
+- inserire i parametri di configurazione dei database:  
 
-- modificare parametri a seconda delle necessità
-- dopo aver messo i nomi dei database, in phpmyadmin creare i database vuoti
+```bash
+DB_DATABASE=geek_pfed
+DB_USERNAME=root
+DB_PASSWORD=root
+
+DB_DATABASE_LU=geek_lu
+DB_USERNAME_LU=root
+DB_PASSWORD_LU=root
+```
 
 ### dalla cartella laravel, lanciare in bash il comando
 
 ```bash
-composer init
+../bashscripts/composer_init.sh
+../composer_custom.sh
 ```
 
 alternativa: 
 
 ```bash
-composer update
-cd Modules/Xot/Services
-composer install
 php artisan key:generate
+cd Modules/Xot/Services
+./bashscripts/composer_init.sh
 ```
 
 ### vedere la lista dei moduli con il comando
