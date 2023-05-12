@@ -78,6 +78,18 @@
             Installazione
         </a>
     
+            
+        <ul class="my-0">
+            <li class="pl-4">
+            
+        <a href="https://privacyfed.github.io/doc_pfed/docs/modules"
+            class="lvl1   nav-menu__item hover:text-blue-500"
+        >
+            Moduli
+        </a>
+    
+    </li>
+    </ul>
     </li>
             <li class="pl-4">
             
@@ -192,6 +204,23 @@ DB_USERNAME_LU=root
 DB_PASSWORD_LU=root
 </code></pre>
 
+<h3>creazione del primo utente Super Admin</h3>
+
+<p>Dopo aver eseguito l'installazione, bisognerà creare il primo utente Super Admin,<br />
+questo perchè se ci si iscrive normalmente, l'account creato non avrà tutti i permessi necessarie per effettuare le varie configurazioni.</p>
+
+<p>Per crearlo, andare nella cartella laravel ed eseguire da terminale:</p>
+
+<pre><code class="language-bash">php artisan lu:user
+</code></pre>
+
+<p>inserire tutti i dati richiesti, in seguito eseguire</p>
+
+<pre><code class="language-bash">php artisan lu:create-areas
+</code></pre>
+
+<p>per associare tutti i permessi di navigazione ai vari moduli presenti</p>
+
 <h3>dalla cartella laravel, lanciare in bash il comando</h3>
 
 <p>comando per installare i pacchetti utilizzati di default nei vari moduli</p>
@@ -204,7 +233,7 @@ DB_PASSWORD_LU=root
 <pre><code class="language-bash">../composer_custom.sh
 </code></pre>
 
-<p>generare la key necessaria per laravel</p>
+<p>generare la key necessaria per laravel come da documentazione ufficiale</p>
 
 <pre><code class="language-bash">php artisan key:generate
 </code></pre>
@@ -214,81 +243,6 @@ DB_PASSWORD_LU=root
 <pre><code class="language-bash">cd Modules/Xot/Services
 ./bashscripts/composer_init.sh
 </code></pre>
-
-<h3>vedere la lista dei moduli con il comando</h3>
-
-<p>Il progetto è strutturato a Moduli, inseriti dentro una base/progetto di laravel, utilizzando il pacchetto nwidart di laravel (https://nwidart.com/laravel-modules/v6/introduction)<br />
-da url tramite il browser:</p>
-
-<pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=module-list
-</code></pre>
-
-<p>alternativa da terminale:</p>
-
-<pre><code class="language-bash">php artisan module:list 
-</code></pre>
-
-<h3>abilitare tutti i moduli con il comando</h3>
-
-<p>da url tramite il browser:</p>
-
-<pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=module-enable&amp;module=NOME_MODULO
-</code></pre>
-
-<p>alternativa da terminale:</p>
-
-<pre><code class="language-bash">php artisan module:enable NomeModulo
-</code></pre>
-
-<h3>fare la migration</h3>
-
-<p>da url tramite il browser:</p>
-
-<pre><code class="language-bash">http://VIRTUAL_HOST.EXT/?_act=artisan&amp;cmd=migrate
-</code></pre>
-
-<p>in alternativa da terminale:</p>
-
-<pre><code class="language-bash">php artisan migrate
-</code></pre>
-
-<h3>per compilare il tema (da dentro la cartella laravel/Themes/NOME_TEMA)</h3>
-
-<pre><code class="language-bash">npm install
-npm run dev
-</code></pre>
-
-<h3>a questo punto bisogna crearsi il virtual host con il nome del dominio uguale a quello del file di configurazione. Esempio:</h3>
-
-<ul>
-<li><p>copio la cartella laravel/config/localhost in laravel/config/local/dominio/* e imposto i parametri nei file</p></li>
-<li><p>questo significa che il virtual host deve chiamarsi dominio.local</p></li>
-</ul>
-
-<h3>IMPORTANTISSIMO per sincronizzare la base si utilizzano i famosi TRE FILES.</h3>
-
-<p>Questi file si trovano nella cartella BASE/bashscripts.</p>
-
-<p>Vanno lanciati dalla cartella della root della BASE.</p>
-
-<p>Si utilizzano così:</p>
-
-<pre><code class="language-bash">- ./bashscripts/git_pull.sh &amp;&amp; ./bashscripts/git_branch.sh per fare il pull
-- ./bashscripts/git_pull.sh &amp;&amp; ./bashscripts/git_branch.sh per fare il push
-</code></pre>
-
-<p>Dopo aver fatto push, siccome su git ci sono delle azioni che possono modificare i file, bisogna rilanciare subito il pull, come scritto sopra</p>
-
-<h3>FORMATTAZIONE DEL CODICE</h3>
-
-<p>Per formattare il codice in modo corretto bisogna usare cs-fixer global. Per installarlo seguire le istruzioni nel seguente file:</p>
-
-<pre><code class="language-bash">bashscripts/tips/cs-fixer.txt
-</code></pre>
-
-<h3>STRUTTURA, TIPS AND TRICKS E RISOLUZIONE ERRORI COMUNI</h3>
-
-<p>Per tips &amp; tricks rivolgersi alla seguente <a href="https://laraxot.github.io/module_xot/docs/base/issues/">Documentazione Generica</a></p>
         </div>
     </div>
 </section>
