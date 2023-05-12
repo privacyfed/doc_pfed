@@ -57,6 +57,8 @@ return [
 
 ### per compilare il tema (da dentro la cartella laravel/Themes/NOME_TEMA)
 
+Andare dentro la cartella del tema in laravel/Themes/nome_tema_interessato ed eseguire:  
+
 ```bash
 npm install
 npm run dev
