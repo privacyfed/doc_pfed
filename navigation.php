@@ -5,6 +5,9 @@ declare(strict_types=1);
 return [
     'Installazione' => [
         'url' => 'docs/installation',
+        'children' => [
+            'Moduli' => 'docs/modules',
+        ],
     ],
     'Pagine' => [
         'children' => [

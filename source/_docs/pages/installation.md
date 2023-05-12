@@ -35,6 +35,22 @@ DB_USERNAME_LU=root
 DB_PASSWORD_LU=root
 ```
 
+### creazione del primo utente Super Admin
+
+Dopo aver eseguito l'installazione, bisognerà creare il primo utente Super Admin,  
+questo perchè se ci si iscrive normalmente, l'account creato non avrà tutti i permessi necessarie per effettuare le varie configurazioni.  
+
+Per crearlo, andare nella cartella laravel ed eseguire da terminale:  
+```bash
+php artisan lu:user
+```
+inserire tutti i dati richiesti, in seguito eseguire  
+
+```bash
+php artisan lu:create-areas
+```
+per associare tutti i permessi di navigazione ai vari moduli presenti
+
 ### dalla cartella laravel, lanciare in bash il comando
 
 comando per installare i pacchetti utilizzati di default nei vari moduli
@@ -47,7 +63,7 @@ comando per installare i pacchetti utilizzati specificatamente per il progetto p
 ../composer_custom.sh
 ```
 
-generare la key necessaria per laravel
+generare la key necessaria per laravel come da documentazione ufficiale
 ```bash
 php artisan key:generate
 ```
@@ -57,86 +73,3 @@ sotto Modules/Xot/Services vengono utilizzati pacchetti utilizzati meno recentem
 cd Modules/Xot/Services
 ./bashscripts/composer_init.sh
 ```
-
-### vedere la lista dei moduli con il comando
-
-Il progetto è strutturato a Moduli, inseriti dentro una base/progetto di laravel, utilizzando il pacchetto nwidart di laravel (https://nwidart.com/laravel-modules/v6/introduction)  
-da url tramite il browser: 
-
-```bash
-http://VIRTUAL_HOST.EXT/?_act=artisan&cmd=module-list
-```
-
-alternativa da terminale:
-
-```bash
-php artisan module:list 
-```
-
-### abilitare tutti i moduli con il comando
-
-da url tramite il browser: 
-
-```bash
-http://VIRTUAL_HOST.EXT/?_act=artisan&cmd=module-enable&module=NOME_MODULO
-```
-
-alternativa da terminale:
-
-```bash
-php artisan module:enable NomeModulo
-```
-
-### fare la migration
-
-da url tramite il browser: 
-
-```bash
-http://VIRTUAL_HOST.EXT/?_act=artisan&cmd=migrate
-```
-
-in alternativa da terminale:
-
-```bash
-php artisan migrate
-```
-
-### per compilare il tema (da dentro la cartella laravel/Themes/NOME_TEMA)
-
-```bash
-npm install
-npm run dev
-```
-
-### a questo punto bisogna crearsi il virtual host con il nome del dominio uguale a quello del file di configurazione. Esempio:
-
-- copio la cartella laravel/config/localhost in laravel/config/local/dominio/* e imposto i parametri nei file
-
-- questo significa che il virtual host deve chiamarsi dominio.local
-
-### IMPORTANTISSIMO per sincronizzare la base si utilizzano i famosi TRE FILES. 
-
-Questi file si trovano nella cartella BASE/bashscripts.
-
-Vanno lanciati dalla cartella della root della BASE.
-
-Si utilizzano così:
-
-```bash
-- ./bashscripts/git_pull.sh && ./bashscripts/git_branch.sh per fare il pull
-- ./bashscripts/git_pull.sh && ./bashscripts/git_branch.sh per fare il push
-```
-
-Dopo aver fatto push, siccome su git ci sono delle azioni che possono modificare i file, bisogna rilanciare subito il pull, come scritto sopra
-
-
-### FORMATTAZIONE DEL CODICE
-
-Per formattare il codice in modo corretto bisogna usare cs-fixer global. Per installarlo seguire le istruzioni nel seguente file:
-
-```bash
-bashscripts/tips/cs-fixer.txt
-```
-
-### STRUTTURA, TIPS AND TRICKS E RISOLUZIONE ERRORI COMUNI
-Per tips & tricks rivolgersi alla seguente [Documentazione Generica](https://laraxot.github.io/module_xot/docs/base/issues/)
