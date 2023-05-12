@@ -175,21 +175,31 @@
 </code></pre>
 
 <ul>
-<li>modificare parametri a seconda delle necessità</li>
-<li>dopo aver messo i nomi dei database, in phpmyadmin creare i database vuoti</li>
+<li>creare il database geek_lu (degli utenti, email, password)</li>
+<li>creare il database geek_pfed (database dedicato al progetto, profili e modelli necessari)</li>
+<li>inserire i parametri di configurazione dei database:</li>
 </ul>
+
+<pre><code class="language-bash">DB_DATABASE=geek_pfed
+DB_USERNAME=root
+DB_PASSWORD=root
+
+DB_DATABASE_LU=geek_lu
+DB_USERNAME_LU=root
+DB_PASSWORD_LU=root
+</code></pre>
 
 <h3>dalla cartella laravel, lanciare in bash il comando</h3>
 
-<pre><code class="language-bash">composer init
+<pre><code class="language-bash">../bashscripts/composer_init.sh
+../composer_custom.sh
 </code></pre>
 
 <p>alternativa:</p>
 
-<pre><code class="language-bash">composer update
+<pre><code class="language-bash">php artisan key:generate
 cd Modules/Xot/Services
-composer install
-php artisan key:generate
+./bashscripts/composer_init.sh
 </code></pre>
 
 <h3>vedere la lista dei moduli con il comando</h3>
