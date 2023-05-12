@@ -7,7 +7,7 @@ section: content
 
 # Installazione {#installation}
 
-### Clonare la base in locale nella cartella del server, scaricando i submodules, e senza la storia delle modifiche
+### Clonare la base in locale nella cartella del server, scaricando i submodules
 
 ```bash
 git clone https://github.com/privacyfed/base_privacyfed.git base_pfed --recurse-submodules --depth=1

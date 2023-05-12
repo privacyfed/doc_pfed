@@ -22,18 +22,32 @@ il criterio da seguire per strutturare i file di configurazione dentro la cartel
 
 # Il file xra.php {#xra-file}
 
-Il progetto è un progetto multi-tenant, ciò significa che si utilizza lo stesso codice del progetto su più domini.  
-Ogni dominio dovrà avere il suo file di configurazione principale, il file xra.php  
+File di configurazione principale, dove vengono inseriti i principali parametri, esempio:  
 
-Ogni file xra.php si dovrà trovare dentro la cartella laravel/config/path_specifica_del_dominio, esempio:  
+```bash
+<?php
 
-in laravel/config/local/dominio/xra.php
+declare(strict_types=1);
 
+return [
+    'adm_theme' => 'Clever',
+    'enable_ads' => '1',
+    'main_module' => 'PFed',
+    'primary_lang' => 'it',
+    'pub_theme' => 'Clever',
+    'register_type' => env('REGISTER_TYPE', '0'),
+    'verification_type' => env('VERIFICATION_TYPE', ''),
+    'login_verified' => env('LOGIN_VERIFIED', true),
+    'login_referrer' => '/admin/pfed/it?_act=profile_show',
+    'home' => '02',
+    'show_trans_key' => true,
+];
+```
 
-
-- copio la cartella laravel/config/localhost in laravel/config/local/dominio/* e imposto i parametri nei file
-
-- questo significa che il virtual host deve chiamarsi dominio.local
+- adm_theme: indica il modulo/tema utilizzato per l'area amministrativa  
+- pub_theme: indica il modulo/tema utilizzato per l'area utente/frontend/pubblico
+- main_module: indica il modulo principale utilizzato per il progetto che si sta usando  
+- home: indica la blade del tema pubblico che verrà visualizzata nella home, si ha quindi la possibilità di creare home differenti per lo stesso tema, da poter utilizzare nelle diverse configurazioni  
 
 
 

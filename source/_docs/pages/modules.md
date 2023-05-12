@@ -6,10 +6,12 @@ section: content
 ---
 
 # I Moduli {#modules}
-Il progetto è strutturato a Moduli, inseriti dentro una base/progetto di laravel, utilizzando il pacchetto nwidart di laravel (https://nwidart.com/laravel-modules/v6/introduction). 
-Esistono moduli necessari per l'esistenza stessa del progetto, come il modulo Xot, Cms, Tenant.
-Gli altri moduli son stati pensati per implementare determinati funzioni.
+Il progetto è strutturato a Moduli, inseriti dentro una base/progetto di laravel/Modules, utilizzando il pacchetto nwidart di laravel (https://nwidart.com/laravel-modules/v6/introduction). 
+Esistono moduli necessari per l'esistenza stessa del progetto, come il modulo Xot, Cms, Tenant.  
+Gli altri moduli son stati pensati per implementare determinati funzioni.  
 Oltre a questi, esiste il modulo PFed, creato appositamente per il progetto.
+
+Inoltre, dentro la cartella laravel/Themes, risiedono i moduli contenenti i possibili temi utilizzati, sia per l'amministrazione sia per il frontend.
 
 
 ### vedere la lista dei moduli con il comando
