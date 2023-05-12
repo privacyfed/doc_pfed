@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content="Aggiornamento del progetto">
+    <meta name="description" content="Aggiornare il progetto">
 
     <meta property="og:site_name" content="Modulo PFed" />
-    <meta property="og:title" content="Aggiornamento del progetto | Modulo PFed" />
-    <meta property="og:description" content="Aggiornamento del progetto" />
+    <meta property="og:title" content="Aggiornare il progetto | Modulo PFed" />
+    <meta property="og:description" content="Aggiornare il progetto" />
     <meta property="og:url" content="https://privacyfed.github.io/doc_pfed/docs/update-project" />
     <meta property="og:image" content="https://privacyfed.github.io/doc_pfed/assets/img/logo.png" />
     <meta property="og:type" content="website" />
@@ -18,7 +18,7 @@
     <meta name="twitter:card" content="summary_large_image">
 
     
-    <title>Modulo PFed | Aggiornamento del progetto</title>
+    <title>Modulo PFed | Aggiornare il progetto</title>
 
     <link rel="home" href="https://privacyfed.github.io/doc_pfed">
     <link rel="icon" href="/favicon.ico">
@@ -89,7 +89,7 @@
         <a href="https://privacyfed.github.io/doc_pfed/docs/update-project"
             class="lvl1  active font-semibold text-blue-500 nav-menu__item hover:text-blue-500"
         >
-            Aggiornamento del progetto
+            Aggiornare il progetto
         </a>
     
     </li>
@@ -143,18 +143,22 @@
         </nav>
 
         <div class="DocSearch-content w-full lg:w-3/5 break-words pb-16 lg:pl-4" v-pre>
-            <h1>Aggiornamento del progetto</h1>
+            <h1>Aggiornare il progetto, i tre files .sh</h1>
 
-<h3>IMPORTANTISSIMO per sincronizzare la base si utilizzano i famosi TRE FILES.</h3>
+<p>Per aggiornare il progetto, in quanto composto da vari moduli, sarebbe non pratico aggiornarli uno ad uno.<br />
+Per ovviare a ciò, sono stati creati 3 file dentro il modulo bashscripts,<br />
+quindi, nella cartella della root del progetto, eseguire i seguenti comandi per effettuare il pull:</p>
 
-<p>Questi file si trovano nella cartella BASE/bashscripts.</p>
+<pre><code class="language-bash">./bashscripts/git_pull.sh
+./bashscripts/git_branch.sh
+./bashscripts/git_push.sh
+</code></pre>
 
-<p>Vanno lanciati dalla cartella della root della BASE.</p>
+<p>invertire l'ordine del primo e terzo comando per effettuare il push:</p>
 
-<p>Si utilizzano così:</p>
-
-<pre><code class="language-bash">- ./bashscripts/git_pull.sh &amp;&amp; ./bashscripts/git_branch.sh per fare il pull
-- ./bashscripts/git_pull.sh &amp;&amp; ./bashscripts/git_branch.sh per fare il push
+<pre><code class="language-bash">./bashscripts/git_push.sh
+./bashscripts/git_branch.sh
+./bashscripts/git_pull.sh
 </code></pre>
 
 <p>Dopo aver fatto push, siccome su git ci sono delle azioni che possono modificare i file, bisogna rilanciare subito il pull, come scritto sopra</p>
