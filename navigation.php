@@ -3,10 +3,12 @@
 declare(strict_types=1);
 
 return [
+    'Installazione' => [
+        'url' => 'docs/installation',
+    ],
     'Pagine' => [
         'children' => [
             // 'Tipo di Registrazione' => 'docs/pages/type-of-sign-in',
-            'Installazione' => 'docs/installation',
             'Profilo' => 'docs/profile',
             'I Miei Servizi' => 'docs/services',
         ],

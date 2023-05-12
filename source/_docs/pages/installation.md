@@ -60,6 +60,7 @@ cd Modules/Xot/Services
 
 ### vedere la lista dei moduli con il comando
 
+Il progetto è strutturato a Moduli, inseriti dentro una base/progetto di laravel, utilizzando il pacchetto nwidart di laravel (https://nwidart.com/laravel-modules/v6/introduction)  
 da url tramite il browser: 
 
 ```bash
