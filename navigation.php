@@ -13,7 +13,7 @@ return [
     ],
     'Pagine' => [
         'children' => [
-            'Registrazione' => 'docs/pages/type-of-sign-in',
+            'Registrazione' => 'docs/type-of-sign-in',
             'Profilo' => 'docs/profile',
             'I Miei Servizi' => 'docs/services',
         ],
