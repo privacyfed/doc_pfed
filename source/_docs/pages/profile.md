@@ -24,7 +24,6 @@ Si visualizzerà un modal dove poter seguire i diversi passi per aggiungere un p
 ##### Primo Passo  {#first-step}
 Si potrà scegliere il tipo di dato che si vuole inserire.  
 L'elenco dei tipi di dato varierà in base alla categoria scelta.  
-TEST !
 
 ##### Secondo Passo 
 Dopo aver scelto il tipo di dato, bisognerà inserire il loro valore.
