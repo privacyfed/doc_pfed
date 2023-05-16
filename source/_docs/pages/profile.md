@@ -7,7 +7,7 @@ section: content
 
 ## La pagina Profilo {#profile}
 
-In questa pagina è possibile aggiungere, modificare, cancellare le proprie informazioni che poi verranno utilizzate nei consensi.  
+In questa pagina è possibile aggiungere, modificare, cancellare le proprie informazioni che poi verranno utilizzate nella pagina "I miei Servizi".  
 
 Sotto l'avatar vengono visualizzate le varie categorie di dato.  
 
@@ -21,19 +21,22 @@ Selezionando una categoria si potrà visualizzare
 Tramite il tasto col segno +, si potrà aggiungere il proprio dato.  
 Si visualizzerà un modal dove poter seguire i diversi passi per aggiungere un proprio dato. 
 
-##### Primo Passo  {#first-step}
+#### Primo Passo  {#first-step}
 Si potrà scegliere il tipo di dato che si vuole inserire.  
 L'elenco dei tipi di dato varierà in base alla categoria scelta.  
 
-##### Secondo Passo 
+#### Secondo Passo 
 Dopo aver scelto il tipo di dato, bisognerà inserire il loro valore.
 
-##### Terzo Passo 
+#### Terzo Passo 
 In quest'ultimo passo, si potrà inserire un eventuale nota o descrizione.
 
-
-### Modificare Dato 
+#### Modificare Dato 
 E' possibile modificare un dato inserito in precedenza, tramite l'apposito tasto "Modifica"  
 
-### Eliminare Dato
+In questo caso se un dato con UUID uguale è utilizzato in qualche servizio, viene fuori un avviso, e poi verranno modificati contemporaneamente sia il dato di "sistema" che quello del "servizio" corrispondente
+
+#### Eliminare Dato
 E' possibile eliminare un dato inserito.  
+
+Anche in questo caso se un dato con UUID uguale è utilizzato in qualche servizio, viene fuori un avviso, e poi verrà cancellato il dato di "sistema" e i servizi che lo contengono, se il dato è obbligatorio per il servizio, verranno disattivati.
