@@ -19,7 +19,7 @@ return [
         ],
     ],
     'Servizi' => [
-        'Creazione' => 'service/create',
+        'Creazione' => 'docs/service/create',
     ],
 
     // 'Base' => [
