@@ -20,7 +20,7 @@ return [
     ],
     'Servizi' => [
         'children' => [
-            'Creazione' => 'docs/service/create',
+            'Creazione' => 'docs/create',
         ],
     ],
 
