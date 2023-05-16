@@ -18,6 +18,10 @@ return [
             'I Miei Servizi' => 'docs/services',
         ],
     ],
+    'Servizi' => [
+        'Creazione' => 'service/create',
+    ],
+
     // 'Base' => [
     //     // 'url' => 'docs/base',
     //     'children' => [
