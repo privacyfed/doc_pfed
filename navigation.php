@@ -19,7 +19,9 @@ return [
         ],
     ],
     'Servizi' => [
-        'Creazione' => 'docs/service/create',
+        'children' => [
+            'Creazione' => 'docs/service/create',
+        ],
     ],
 
     // 'Base' => [
