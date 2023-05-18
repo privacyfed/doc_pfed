@@ -26,6 +26,7 @@ return [
     'Servizi' => [
         'children' => [
             'Creazione' => 'docs/create',
+            'Come associare un campo composto ad un servizio' => 'docs/service-extra-field',
         ],
     ],
 
