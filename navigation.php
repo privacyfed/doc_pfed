@@ -13,7 +13,7 @@ return [
     ],
     'Chat' => [
         'children' => [
-            'conversazione 16/05/2023' => 'docs/conversazione_16_05_2023',
+            'conversazione 16/05/2023' => 'docs/conversazione-16-05-2023',
         ],
     ],
     'Lista Funzionalità' => [
