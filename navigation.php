@@ -17,7 +17,7 @@ return [
         ],
     ],
     'Lista Funzionalità' => [
-        'url' => 'docs/lista_funzioni',
+        'url' => 'docs/lista-funzioni',
     ],
     'Pagine' => [
         'children' => [
