@@ -16,6 +16,9 @@ return [
             'conversazione 16/05/2023' => 'docs/conversazione_16_05_2023',
         ],
     ],
+    'Lista Funzionalità' => [
+        'url' => 'docs/lista_funzioni',
+    ],
     'Pagine' => [
         'children' => [
             'Registrazione' => 'docs/signup',
