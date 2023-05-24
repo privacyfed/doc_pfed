@@ -11,11 +11,11 @@ return [
             'Configurazione' => 'docs/configuration',
         ],
     ],
-    // 'Chat' => [
-    //     'children' => [
-    //         'Lucio' => 'docs/lucio',
-    //     ],
-    // ],
+    'Chat' => [
+        'children' => [
+            'conversazione 16/05/2023' => 'docs/conversazione_16_05_2023',
+        ],
+    ],
     'Pagine' => [
         'children' => [
             'Registrazione' => 'docs/signup',
