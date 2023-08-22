@@ -9,9 +9,9 @@ section: content
 
 In questa pagina è possibile iscriversi e visualizzare i servizi delle varie aziende accettando i relativi consensi.  
 
-### Iscrizione a un Servizio - Tasto Aggiungi Servizio
+### Iscrizione a un Servizio - Tasto "Iscriviti ad un Servizio"
 
-Tramite il tasto "Aggiungi Servizio", bisogna seguire i vari step:
+Tramite il tasto "Iscriviti ad un Servizio", bisogna seguire i vari step:
 
 #### Primo passo
 
